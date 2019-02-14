@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeVC" customModule="chat" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="eqp-5G-OJN" id="Dwa-zl-Dx4"/>
+                <outlet property="registerButton" destination="U2j-bT-2dA" id="4WQ-dZ-bmW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqp-5G-OJN">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Log In"/>
+                </button>
+                <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2j-bT-2dA">
+                    <rect key="frame" x="0.0" y="587" width="375" height="40"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="UBA-LP-5qz"/>
+                    </constraints>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="Register"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-6D-PD6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="U2j-bT-2dA" firstAttribute="height" secondItem="eqp-5G-OJN" secondAttribute="height" id="14B-DV-wlj"/>
+                <constraint firstItem="eqp-5G-OJN" firstAttribute="top" secondItem="U2j-bT-2dA" secondAttribute="bottom" id="9k5-v9-ql7"/>
+                <constraint firstItem="U2j-bT-2dA" firstAttribute="top" secondItem="FZd-6D-PD6" secondAttribute="bottom" id="KKW-AC-PHb"/>
+                <constraint firstItem="eqp-5G-OJN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OgY-hf-7sh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eqp-5G-OJN" secondAttribute="bottom" id="Qcj-xC-WLQ"/>
+                <constraint firstItem="FZd-6D-PD6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cj2-2v-LuM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FZd-6D-PD6" secondAttribute="trailing" id="ex9-rI-rOM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U2j-bT-2dA" secondAttribute="trailing" id="gwR-VP-hB8"/>
+                <constraint firstItem="U2j-bT-2dA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ia2-e0-UOy"/>
+                <constraint firstItem="FZd-6D-PD6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-20" id="xUs-at-hk6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eqp-5G-OJN" secondAttribute="trailing" id="xf6-4v-ckJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="1280" height="949"/>
+    </resources>
+</document>
