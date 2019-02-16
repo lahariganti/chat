@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import CoreData
 import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var ref: DatabaseReference!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: WelcomeVC())
 
         FirebaseApp.configure()
+        let database = Database.database().reference()
+        database.setValue("we have data")
+
         return true
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterVC: UIViewController {
 
@@ -16,8 +17,20 @@ class RegisterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        passwordtextField.isSecureTextEntry = true
+        registerButton.addTarget(self, action: #selector(registerButtonPressed), for: .touchUpInside)
     }
 
-
+    @objc func registerButtonPressed() {
+        if let email = emailTextField.text, let password = passwordtextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+                if error != nil {
+                    print(error!)
+                } else {
+                    print("registeration successful")
+                    self.navigationController?.pushViewController(ChatVC(), animated: true)
+                }
+            }
+        }   
+    }
 }

@@ -15,9 +15,14 @@ class WelcomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerButton.addTarget(self, action: #selector(registerButtonPressed), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
     }
 
     @objc func registerButtonPressed() {
-        present(RegisterVC(), animated: true, completion: nil)
+        navigationController?.pushViewController(RegisterVC(), animated: true)
+    }
+
+    @objc func loginButtonPressed() {
+        navigationController?.pushViewController(LoginVC(), animated: true)
     }
 }
