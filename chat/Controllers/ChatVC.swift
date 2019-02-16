@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ChatVC: UIViewController {
 
@@ -20,8 +21,12 @@ class ChatVC: UIViewController {
     }
 
     @objc func logoutButtonPressed() {
-        print("user has logged out")
-        dismiss(animated: true, completion: nil)
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch {
+            print(error)
+        }
     }
 
     @objc func registerButtonPressed() {
