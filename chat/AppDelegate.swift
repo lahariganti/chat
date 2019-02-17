@@ -23,9 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: WelcomeVC())
 
         FirebaseApp.configure()
-        let database = Database.database().reference()
-        database.setValue("we have data")
-
         return true
     }
 }

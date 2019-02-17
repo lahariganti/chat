@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="chatTableView" destination="knd-q2-1A7" id="EI4-rL-z2X"/>
                 <outlet property="chatTextField" destination="2Wv-AN-56t" id="vKb-bL-4Po"/>
+                <outlet property="chatTextFieldBackgroundHeightConstraint" destination="rrJ-Fl-Xa7" id="ALc-4P-4vE"/>
                 <outlet property="sendButton" destination="XbA-QM-zyT" id="5Jd-QV-z0Q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,14 +24,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="knd-q2-1A7">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="knd-q2-1A7">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1W-3B-rwF">
                     <rect key="frame" x="0.0" y="619" width="375" height="48"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Wv-AN-56t">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Away" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Wv-AN-56t">
                             <rect key="frame" x="21" y="10" width="262" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -52,7 +53,6 @@
                         <constraint firstAttribute="trailing" secondItem="XbA-QM-zyT" secondAttribute="trailing" constant="15" id="OhV-YP-nth"/>
                         <constraint firstItem="XbA-QM-zyT" firstAttribute="leading" secondItem="2Wv-AN-56t" secondAttribute="trailing" constant="31" id="eGQ-SI-71t"/>
                         <constraint firstAttribute="bottom" secondItem="XbA-QM-zyT" secondAttribute="bottom" constant="9" id="gpx-Rx-Qy0"/>
-                        <constraint firstAttribute="height" constant="48" id="loF-ue-u2G"/>
                         <constraint firstItem="XbA-QM-zyT" firstAttribute="top" secondItem="X1W-3B-rwF" secondAttribute="top" constant="9" id="tRh-6M-li9"/>
                         <constraint firstItem="2Wv-AN-56t" firstAttribute="top" secondItem="X1W-3B-rwF" secondAttribute="top" constant="10" id="wx9-21-fmE"/>
                     </constraints>
@@ -64,8 +64,8 @@
                 <constraint firstItem="X1W-3B-rwF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="43x-6b-S50"/>
                 <constraint firstItem="knd-q2-1A7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RKP-sk-sYS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="knd-q2-1A7" secondAttribute="top" constant="20" id="W41-Z8-dlX"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X1W-3B-rwF" secondAttribute="bottom" id="b3b-cH-SXF"/>
                 <constraint firstItem="X1W-3B-rwF" firstAttribute="top" secondItem="knd-q2-1A7" secondAttribute="bottom" constant="-2" id="pAm-rl-C8x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X1W-3B-rwF" secondAttribute="bottom" id="rrJ-Fl-Xa7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X1W-3B-rwF" secondAttribute="trailing" id="y72-UC-qqR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

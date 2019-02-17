@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="chat" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="d1H-WI-N6g" id="aW3-O2-Knk"/>
+                <outlet property="loginButton" destination="dWg-mZ-qJI" id="GLe-ER-hoZ"/>
+                <outlet property="passwordTextField" destination="UyE-Vj-quI" id="AWP-BK-tc6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

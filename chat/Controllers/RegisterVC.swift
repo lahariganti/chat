@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class RegisterVC: UIViewController {
 
@@ -22,12 +23,14 @@ class RegisterVC: UIViewController {
     }
 
     @objc func registerButtonPressed() {
+        SVProgressHUD.show()
         if let email = emailTextField.text, let password = passwordtextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                 if error != nil {
                     print(error!)
                 } else {
                     print("registeration successful")
+                    SVProgressHUD.dismiss()
                     self.navigationController?.pushViewController(ChatVC(), animated: true)
                 }
             }

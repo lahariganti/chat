@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C8C48032218655F00F91536 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8C48012218655E00F91536 /* MessageCell.xib */; };
+		6C8C48062218692400F91536 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8C48052218692300F91536 /* MessageCell.swift */; };
+		6C8C48082218DB6000F91536 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8C48072218DB6000F91536 /* Message.swift */; };
 		6CBD3D63221528CF0066E7D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBD3D62221528CF0066E7D3 /* AppDelegate.swift */; };
 		6CBD3D68221528CF0066E7D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBD3D66221528CF0066E7D3 /* Main.storyboard */; };
 		6CBD3D6B221528CF0066E7D3 /* chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CBD3D69221528CF0066E7D3 /* chat.xcdatamodeld */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		129B2A1129BB50D47E64E6E4 /* Pods-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-chat/Pods-chat.release.xcconfig"; sourceTree = "<group>"; };
+		6C8C48012218655E00F91536 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		6C8C48052218692300F91536 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		6C8C48072218DB6000F91536 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		6CBD3D5F221528CF0066E7D3 /* chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBD3D62221528CF0066E7D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CBD3D67221528CF0066E7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,6 +73,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6C8C4804221865D400F91536 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C8C48052218692300F91536 /* MessageCell.swift */,
+				6C8C48012218655E00F91536 /* MessageCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C8C48092218DB6500F91536 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C8C48072218DB6000F91536 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6CBD3D56221528CF0066E7D3 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +119,8 @@
 				6CBD3D71221528D10066E7D3 /* Info.plist */,
 				6CBD3D69221528CF0066E7D3 /* chat.xcdatamodeld */,
 				6CBD3D7B221529800066E7D3 /* Controllers */,
+				6C8C4804221865D400F91536 /* Views */,
+				6C8C48092218DB6500F91536 /* Model */,
 			);
 			path = chat;
 			sourceTree = "<group>";
@@ -187,6 +212,7 @@
 				6CBD3D70221528D10066E7D3 /* LaunchScreen.storyboard in Resources */,
 				6CBD3D832216A0C80066E7D3 /* GoogleService-Info.plist in Resources */,
 				6CBD3D6D221528D10066E7D3 /* Assets.xcassets in Resources */,
+				6C8C48032218655F00F91536 /* MessageCell.xib in Resources */,
 				6CBD3D8B2216B2580066E7D3 /* ChatVC.xib in Resources */,
 				6CBD3D812215CD490066E7D3 /* RegisterVC.xib in Resources */,
 				6CBD3D68221528CF0066E7D3 /* Main.storyboard in Resources */,
@@ -263,7 +289,9 @@
 				6CBD3D802215CD490066E7D3 /* RegisterVC.swift in Sources */,
 				6CBD3D63221528CF0066E7D3 /* AppDelegate.swift in Sources */,
 				6CBD3D792215296B0066E7D3 /* WelcomeVC.swift in Sources */,
+				6C8C48082218DB6000F91536 /* Message.swift in Sources */,
 				6CBD3D862216AC310066E7D3 /* LoginVC.swift in Sources */,
+				6C8C48062218692400F91536 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
