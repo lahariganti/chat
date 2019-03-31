@@ -16,5 +16,7 @@ class MessageCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        messageBackgroundView.layer.cornerRadius = 8
+        messageBackgroundView.clipsToBounds = true
     }
 }
